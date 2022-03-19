@@ -14,7 +14,7 @@ export const Menu: React.FC = () => {
           </p>
           <ul className="menu-list">
               {
-                menuItens.map(item => (<MenuItem label={item.label} href={item.href}/>))
+                menuItens.map((item, index) => (<MenuItem label={item.label} href={item.href} key={index}/>))
               }
           </ul>
       </aside>
